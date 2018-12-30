@@ -10,7 +10,7 @@
  * "currentPlayer"
  * "board" = current board, via space separated 3-digit integers: "111 120 132 210 220 212 ..."
  * 
- * http://gfrd.ddns.net:26128/AI.php?n=3&currentPlayer=1&board=001+012+020+100+110+120+200+210+220
+ * http://address/AI.php?n=3&currentPlayer=1&board=001+012+020+100+110+120+200+210+220
  * 
  * Uses minimax algorithm described in the CS50 lectures.
  * 
