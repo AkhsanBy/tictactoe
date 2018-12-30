@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Bootstrap -->
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    
+	    <meta name="Tic Tac Toe by GFRD" content="">
+	    <meta name="Guilherme Felipe Reis Duarte" content="">
+	    <link rel="icon" href="favicon.png">
+	    
+	    <link href="/css/tictactoe.css" rel="stylesheet">
+    	<link href="/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    	
+    	<title>Tic Tac Toe by GFRD</title>
+	</head>
+	<body>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		
+		<div class="container">
+			<h2>Tic Tac Toe by GFRD</h2>
+			<!-- Board -->
+			<div class="col-sm-8">
+				<!-- <img src="/img/X.png" height="128" width="128" id="test"/>  -->
+				<table id="board">
+					<tbody></tbody>
+					<!-- 		
+					<tr><td class="A1"><img src="/img/X.png" height="128" width="128"/></td><td class="B1"></td><td class="C1"></td></tr>
+					<tr><td class="A2"></td><td class="B2"></td><td class="C2"></td></tr>
+					<tr><td class="A3"></td><td class="B3"></td><td class="C3"></td></tr>
+					 -->
+				</table>
+				<div id="msg"></div>
+			</div>
+			
+			<!-- Options -->
+			<div class="col-sm-4">
+				<div class="col-xs-6">
+					<h5>Player 1: <b>X</b></h5>
+					<form>
+						<div class="radio">
+							<label><input type="radio" name="player1" value="human" checked>Human</label>
+							<label><input type="radio" name="player1" value="AI1">AI Easy (depth = 3)</label>
+							<label><input type="radio" name="player1" value="AI2">AI Hard (depth = 6)</label>
+							<label><input type="radio" name="player1" value="AI3">AI Expert</label>
+						</div>
+					</form>
+				</div>
+				<div class="col-xs-6">
+					<h5>Player 2: <b>O</b></h5>
+					<form>
+						<div class="radio">
+							<label><input type="radio" name="player2" value="human" checked>Human</label>
+							<label><input type="radio" name="player2" value="AI1">AI Easy (depth = 3)</label>
+							<label><input type="radio" name="player2" value="AI2">AI Hard (depth = 6)</label>
+							<label><input type="radio" name="player2" value="AI3">AI Expert</label>
+						</div>
+					</form>
+				</div>
+				
+				<div class="form-group">
+      				<label for="sel1">Board size:</label>
+      				<select class="form-control" name="size" id="boardSizeSelection">
+        				<option value="3" selected>3</option>
+        				<option value="4">4</option>
+				        <option value="5">5</option>
+      				</select>
+      				<br>
+      			</div>
+				
+				<button type="button" class="btn btn-primary" id="startButton">Start game</button>
+			</div>
+		</div>
+			    
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+		<script src="/js/helper.js"></script>
+		<script src="/js/tictactoe.js"></script>
+		<script src="/js/main.js"></script>
+	</body>
+</html>
